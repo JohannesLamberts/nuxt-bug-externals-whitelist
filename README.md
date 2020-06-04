@@ -2,6 +2,8 @@
 
 > Bug Reproduction for 'node_modules with "." in their module path accidentally whitelisted'
 
+[GitHub Issue](https://github.com/nuxt/nuxt.js/issues/7462) | [CTMY Issue](https://cmty.app/nuxt/nuxt.js/issues/c10729)
+
 ## Bug Reproduction
 
 1. Run `yarn install`
