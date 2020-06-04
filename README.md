@@ -42,3 +42,6 @@ In case of `@sum.cumo/vue-states` the Plugin (unsuccessfully) tried to redefine 
 
 It seems impossible to check if `@scope/some.module` should be bundled (without checking the file system),
 since `some.module` could be the name both of a package (folder) or of a (non-native) file.
+
+It also seems impossible at that point to check if `file.umd` is not actually `file.umd.js` 
+and the `.js` will be appended by webpack automatically (later). 
