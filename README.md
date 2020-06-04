@@ -20,7 +20,7 @@
 8. Make a request to the server
 9. Check the stack trace that is printed.
    - It does now refer to `node_modules/@sumcumo/vue-states/dist/vue-states.umd.js:177:58`
-10. Fix the bug by changing `/\.(?!js(x|on)?$)/i,` in `node_modules/@nuxt/webpack/dist/webpack.js:5098` <br />to `path => /^(|\.js(x|on)?)$/.test(require('path').extname(path))` <br />Source: https://github.com/nuxt/nuxt.js/blob/dev/packages/webpack/src/config/server.js#L23
+10. Fix the bug by changing `/\.(?!js(x|on)?$)/i,` in `node_modules/@nuxt/webpack/dist/webpack.js:5098` <br />to `path => !/^(|\.js(x|on)?)$/.test(require('path').extname(path))` <br />Source: https://github.com/nuxt/nuxt.js/blob/dev/packages/webpack/src/config/server.js#L23
 11. Move the package back to `@sum.cumo` and restart
 12. Make a request to the server
 13. Check the stack-trace, the plugin is now **not** bundled
